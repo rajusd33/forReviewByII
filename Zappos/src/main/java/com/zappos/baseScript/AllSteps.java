@@ -3,7 +3,6 @@ package com.zappos.baseScript;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -106,7 +105,7 @@ public class AllSteps{
 	
 	@When("^user click on \"([^\"]*)\" link$")
 	public void user_click_on_link(String arg1) {
-		String winHandleBefore = driver.getWindowHandle();
+		String winHandleBefore = driver.getWindowHandle(); // to switch back to original window
 		app.objectRep().dontseeLink().click();
 
 	}

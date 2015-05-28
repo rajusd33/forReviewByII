@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 					monochrome = true,
 					features = "src/test/resources",
 					glue = "com.zappos.baseScript",
-					format={
+					plugin={
 							"pretty",
 							}
 					)
